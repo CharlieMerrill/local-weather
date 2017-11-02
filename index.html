@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row bottom-border">
+        <div class="col-xs-12 col-sm-8">
+
+          <div class="icon thunder-storm hidden">
+            <div class="cloud"></div>
+            <div class="lightning">
+              <div class="bolt"></div>
+              <div class="bolt"></div>
+            </div>
+          </div>
+
+          <div class="icon cloudy hidden">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+          </div>
+
+          <div class="icon flurries hidden">
+            <div class="cloud"></div>
+            <div class="snow">
+              <div class="flake"></div>
+              <div class="flake"></div>
+            </div>
+          </div>
+
+          <div class="icon sunny hidden">
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+          </div>
+
+          <div class="icon rainy hidden">
+            <div class="cloud"></div>
+            <div class="rain"></div>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 white" id="info">
+          <h4 id="date"></h4>
+          <h1 id="time">00:00</h1>
+          <h4 class="display-inline"><i class="fa fa-map-marker" aria-hidden="true"></i></h4>
+          <h4 id="city" class="display-inline"></h4>
+          <h5 id="description"><h5>
+        </div>
+      </div>
+      <div class="row white">
+        <div class="col-sm-2 col-xs-6">
+          <img src="images/thermometer.svg" alt="thermomter icon" class="bottom-icon">
+        </div>
+        <div class="col-sm-2 col-xs-6 right-border text-center" id="toggle-temp">
+          <h2 id="temp">0&#8457;</h2>
+          <p id="low" class="display-inline">0</p>
+          <p class="display-inline"> - </p>
+          <p id="high" class="display-inline">0&#8457;</p>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+          <img src="images/wind.svg" alt="wind icon" id="wind-icon">
+        </div>
+        <div class="col-sm-2 col-xs-6 right-border">
+          <h5 id="wind-speed" class="top-margin">Wind: 0 MPH</h5>
+          <h6 id="wind-direction"></h6>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+          <img src="images/humidity.png" alt="humidity icon" class="bottom-icon">
+        </div>
+        <div class="col-sm-2 col-xs-6 text-center">
+          <h5 id="humidity" class="top-margin">Humidity: 0%</h5>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
